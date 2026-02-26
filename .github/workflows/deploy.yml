@@ -33,7 +33,6 @@ jobs:
       - name: Log in to DockerHub
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
         # docker 로그인 
-
         # docker build : image를 생성 => dockerhub에 전송  
       - name: Build and Push Docker image
         run: |
